@@ -11,6 +11,6 @@ jobs:
         env:
           NOTION_TOKEN: ${{secrets.NOTION_TOKEN}}
           DATABASE_URL: https://www.notion.so/blacknosaur/cc2e521ef4dd44608411475784fe8c7a?v=02cec6be77ae49a08f047b51b0db6ae6
-          PROPERTTY_NAME: status
+          PROPERTY_NAME: status
           STATE_OPEN: open
           STATE_CLOSED: close
