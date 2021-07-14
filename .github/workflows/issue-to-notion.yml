@@ -1,16 +1,16 @@
-name: issue_to_notion
-on: 
-  [issues]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Notion Card Creator
-        uses: dodo4114/issue-to-notion@v1.1.1
-        env:
-          NOTION_TOKEN: ${{secrets.NOTION_TOKEN}}
-          DATABASE_URL: https://www.notion.so/blacknosaur/cc2e521ef4dd44608411475784fe8c7a?v=02cec6be77ae49a08f047b51b0db6ae6
-          PROPERTTY_NAME: status
-          STATE_OPEN: open
-          STATE_CLOSED: close
+# name: issue_to_notion
+# on: 
+#   [issues]
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - name: Notion Card Creator
+#         uses: dodo4114/issue-to-notion@v1.1.1
+#         env:
+#           NOTION_TOKEN: ${{secrets.NOTION_TOKEN}}
+#           DATABASE_URL: https://www.notion.so/blacknosaur/cc2e521ef4dd44608411475784fe8c7a?v=02cec6be77ae49a08f047b51b0db6ae6
+#           PROPERTTY_NAME: status
+#           STATE_OPEN: open
+#           STATE_CLOSED: close

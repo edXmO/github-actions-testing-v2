@@ -1,0 +1,21 @@
+name: Notion2Github
+on:
+  issues:
+  pull_request:
+  push:
+    branches:
+      - main
+jobs:
+  auto-sync-from-notion-to-github:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Notion2Github
+        uses: younho9/notion2github@v1.1.0
+        with:
+          database-url: 'https://www.notion.so/blacknosaur/1622a6e8137544a2a4c434d5114a9e5e?v=afd6940e7ae244a0b1cf6e96f7aec3a0'
+          docs-directory: docs
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
