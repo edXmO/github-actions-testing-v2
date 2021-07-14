@@ -1,0 +1,26 @@
+name: CI-Test
+
+
+on: [push]
+
+
+jobs: 
+  build: 
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: First Action
+        run: echo "Hello world from ${{github.workflow}} triggered by the ${{github.event_name}}"
+
+      - name: More and More
+        env: 
+          JOB_CONTEXT: ${{toJson(job)}}
+        run: |
+          echo "Job context: $JOB_CONTEXT"
+          echo "done!"
+
+
+
