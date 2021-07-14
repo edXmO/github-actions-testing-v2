@@ -13,4 +13,4 @@ jobs:
           DATABASE_URL: https://www.notion.so/blacknosaur/cc2e521ef4dd44608411475784fe8c7a?v=02cec6be77ae49a08f047b51b0db6ae6
           PROPERTY_NAME: status
           STATE_OPEN: open
-          STATE_CLOSED: close
+          STATE_CLOSED: closed
