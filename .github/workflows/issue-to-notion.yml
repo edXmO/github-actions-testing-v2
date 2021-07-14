@@ -9,12 +9,8 @@ jobs:
       - name: Notion Card Creator
         uses: dodo4114/issue-to-notion@v1.1.1
         env:
-<<<<<<< HEAD
-          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-=======
           NOTION_TOKEN: ${{secrets.NOTION_TOKEN}}
->>>>>>> 282ca65169a60976d3c5c20900e07d0a138eca34
           DATABASE_URL: https://www.notion.so/blacknosaur/cc2e521ef4dd44608411475784fe8c7a?v=02cec6be77ae49a08f047b51b0db6ae6
-          PROPERTTY_NAME: Status
+          PROPERTTY_NAME: status
           STATE_OPEN: open
           STATE_CLOSED: close
