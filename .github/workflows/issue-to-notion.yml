@@ -1,6 +1,6 @@
 name: issue_to_notion
 on: 
-  issues:
+  [issues]
 jobs:
   build:
     runs-on: ubuntu-latest
